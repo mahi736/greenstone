@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* border: 5px solid red; */
+    color: white;
+    /* position: absolute;
+    top: 35%;
+    left: 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+.container h1{
+    font-size: 40px;
+    border-bottom: 4px solid green;
+    margin-bottom: 30px;
+    padding: 12px 5px;
+}
+.register{
+    width: 500px;
+    border-bottom: 2px solid green;
+    color: white;
+    transition: all 0.5s ease-out;
+    /* border: 2px solid green; */
+}
+.register input{
+    background: none;
+    width: 400px;
+    margin: 10px 5px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: white;
+    /* color: white; */
+}
+.register i{
+    width: 25px;
+    text-align: center;
+    /* color: black; */
+}
+.register2{
+    width: 500px;
+    border-bottom: 2px solid green;
+    color: white;
+    transition: all 0.5s ease-out;
+    /* border: 2px solid green; */
+}
+.register2 input{
+    background: none;
+    width: 400px;
+    margin: 10px 5px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: white;
+    /* color: white; */
+}
+.register2 i{
+    width: 25px;
+    text-align: center;
+    /* color: black; */
+}
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    margin: 15px 10px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid green;
+    font-size: 16px;
+    color: white;
+    background: none;
+}
+.btn:hover{
+    background-color: green;
+    color: black;
+}
+.color{
+    border-bottom: 2px solid red !important;
+}

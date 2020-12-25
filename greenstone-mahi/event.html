@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Events</title>
+    <link rel="stylesheet" href="bm.css">
+    <link rel="stylesheet" href="web.css">
+
+</head>
+<body>
+	<!--navigation----------->
+	 			<nav class="navbar">
+	 				<!--logo-->
+	 				<a href="#" class="logo">Greenstone</a>
+	 				<!--menu-->
+	 				<ul class="menu-r"> 
+	 					<li><a href="index.html">Home</a></li>
+	 					<li><a href="event.html" class="active">Event</a></li>
+	 					<li><a href="gallery.html">Gallery</a></li>
+	 					<li><a href="bm.html">Team</a></li>
+	 					<li><a href="Contact.html">Contact Us</a></li>
+                     </ul>
+                     <div onclick="response()" class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+	 			</nav>
+                 <div class="text"><h1>Events</h1></div>
+                 <div class="event">
+                    <h1>Events</h1>
+                    <hr>
+                    <div class="box-container">
+                        <!--1------->
+                        <div class="box">
+                            <span><img src="images/img01.jpeg"></span>
+                            <p class="heading">Mission Green</p>
+                            <p class="details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est corporis minus assumenda accusamus perferendis sint error, facere voluptatem, soluta distinctio, eos esse. Quidem?</p>
+                            <button onclick="register()">Register Now</button>
+                        </div>
+                        <!--2------->
+                        <div class="box">
+                            <span>2</span>
+                            <p class="heading">Plantation Delight</p>
+                            <p class="details">This is a dummy description. I just written anything here. Board members are requested to change it via log in. and blah blah Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio earum quas culpa.</p>
+                            <button onclick="register()">Register Now</button>
+                        </div>
+                        <!--3------->
+                        <div class="box">
+                            <span>3</span>
+                            <p class="heading">Green Times</p>
+                            <p class="details">This is a dummy description. I just written anything here. Board members are requested to change it via log in. and blah blah Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio earum quas culpa.</p>
+                            <button onclick="register()">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <p>Thanks for Visiting</p>
+                    <p>Developed by: Md.Meharob Hossain Mahi & Riadul Islam Siam.</p>
+                    <p>Email: lovegreenstone0024@gmail.com</p>
+                    </div>
+                    <!--copyright---->
+                    <p class="copyright">©2021 Greenstone Community: All Rights Researved.</p>
+                </footer>
+</body>
+<script src="script.js"></script>
+<script>
+    function register(){
+		location = 'register.html';
+	}
+</script>
+</html>
