@@ -1,209 +1,126 @@
-
-*{
-	margin: 0; 
-	padding: 0;
-	box-sizing: border-box;
-	font-family: calibri;
+.form *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-section{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* min-height: 100vh; */
-	background: black ;
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background: white;
 }
-section::before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: black;
+.container{
+  width: 80%;
+  padding: 20px;
 }
-section .container{
-	position: relative;
-	/* min-width: 1100px; */
-	/* min-height: 550px; */
-	width: 100vw;
-	height: 700px;
-	display: flex;
-	z-index: 997;
-}
-section .container .contactinfo{
-	position: absolute;
-	top: 40px;
-	width: 350px;
-	height: calc(100% - 80px);
-	background: rgb(4, 65, 4);
-	z-index: 1;
-	padding: 40px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-	margin-left: 35px;
-}
-section .container .contactinfo h2{
-	color: #ffffff;
-	font-size: 24px;
-	font-weight: 500;
-
-}
-section .container .contactinfo .info{
-	position: relative;
-	margin: 20px 0;
-}
-section .container .contactinfo .info li{
-	position: relative;
-	list-style: none;
-	display: flex;
-	margin: 20px;
-	/* cursor: pointer; */
-	align-items: flex-start;
-}
-section .container .contactinfo .info li span:nth-child(1){
-	width: 30px;
-	min-width: 30px;
-}
-section .container .contactinfo .info li span:nth-child(1) img{
-	max-width: 100%;
-	filter: invert(1);
-	opacity: 0.5;
-}
-section .container .contactinfo .info li span:nth-child(2){
-	color: #fff;
-	margin-left: 10px;
-	font-weight: 300;
-	opacity: 0.5;
-}
-section .container .contactinfo .info li span:nth-child(1) img,
-section .container .contactinfo .info li span:nth-child(2){
-	opacity: 1;
-}
-section .container .contactinfo .sci{
-	position: relative;
-	display: flex;
-}
-section .container .contactinfo .sci li{
-	list-style: none;
-	margin-left:5px;
-
-}
-section .container .contactinfo .sci li a{
-	 text-decoration: none;
-}
-section .container .contactinfo .sci li a img{
-	/* filter: invert(1); */
-	opacity: 0.8;
-}
-section .container .contactinfo .sci a img:hover{
-	opacity: 1;
-	color: #ffffff;
-}
-section .container .contactform{
-	position: absolute;
-	padding: 70px 50px;
-	background: #ffffff;
-	margin-left: 150px;
-	padding-left: 250px;
-	width: calc(100% - 150px);
-	height: 100%;
-	box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-	width: 80%;
-}
-section .container .contactform h2{
-	color: #0f3959;
-	font-size: 24px;
-	font-weight: 500;
-}
-section .container .contactform .formbox{
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding-top: 30px;
-}
-section .container .contactform .formbox .inputbox{
-	position: relative;
-	margin: 0 0 35px 0;
-}
-section .container .contactform .formbox .inputbox.w50{
-	width: 47%;
-}
-section .container .contactform .formbox .inputbox.w100{
-	width: 100%;
-}
-section .container .contactform .formbox .inputbox input,
-section .container .contactform .formbox .inputbox textarea{
-	width: 100% !important;
-	padding: 5px 0;
-	resize: none;
-	font-size: 18px;
-	font-weight: 300;
-	color: #333;
-	border: none;
-	border-bottom: 1px solid #777;
-	outline: none;
-	margin: 5px 0px;
-}
-section .container .contactform .formbox .inputbox textarea{
-	min-height: 120px;
-}
-section .container .contactform .formbox .inputbox span{
-	position: absolute;
-	left: 0;
-	padding: 5px 0;
-	font-size: 18px;
-	font-weight: 300;
-	color: #333;
-	transition: 0.3s;
-	pointer-events: none;
-}
-section .container .contactform .formbox .inputbox input:focus ~ span,
-section .container .contactform .formbox .inputbox textarea:focus ~ span,
-section .container .contactform .formbox .inputbox input:valid ~ span,
-section .container .contactform .formbox .inputbox textarea:valid ~ span{
-	transform: translateY(-20px);
-	font-size: 20px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	color: #ff568c;
-}
-section .container .contactform .formbox .inputbox input[type="submit"]{
-	position: relative;
-	cursor: pointer;
-	background: green;
-	color: #fff;
-	border: none;
-	max-width: 150px;
-	padding: 10px;
-	font-size: 25px;
-	transition: all 0.7s ease-out;
-}
-section .container .contactform .formbox .inputbox input[type="submit"]:hover{
-	background: rgb(4, 56, 4); 
+.container h2{
+  width: 100%;
+  color: green;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-/* resposive */
-@media only screen and (max-width: 1100px){
-	section .container .contactinfo{
-		display: none !important;
-	}
-	section .container .contactform .formbox{
-		flex-direction: column;
-	}
-	section .container .contactform{
-		padding: 0 !important;
-		padding-right: 7% !important;
-		margin-left: 10% !important;
-		padding-left: 5%;
-	}
-	section .container .contactform .formbox{
-		padding-left: 15px;
-	}
-	section .container .contactform h2{
-		padding-left: 15px;
-	}
+.container .row100{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.container .row100 .col{
+  position: relative;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+.container .row100 .inputBox{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: green;
+}
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0px 10px;
+  z-index: 1;
+  color: black;
+  border: none;
+}
+
+.container .row100 .inputBox .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text{
+  top: -35px;
+  left: -10px;
+}
+.container .row100 .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: green;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line{
+  background: red;
+}
+.container .row100 .inputBox .textarea{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+.container .row100 .inputBox.textarea textarea{
+  height: 100%;
+  resize: none;
+  font-family: calibri;
+}
+.container .row100 .inputBox textarea:focus + .text,
+.container .row100 .inputBox textarea:valid + .text{
+  top: -35px;
+  left: -10px;
+}
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line{
+  background: red;
+}
+
+input[type="submit"]{
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: green;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.7s ease-out;
+}
+input[type="submit"]:hover{
+  background-color: rgb(4, 66, 4);
 }

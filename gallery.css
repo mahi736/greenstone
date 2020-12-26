@@ -19,11 +19,11 @@ body{
 }
 .text h1{
 	font-size: 60px;
-	line-height: 1.4;
+	/* line-height: 1.4; */
 	letter-spacing: 0.5rem;
 	text-align: center; 
 	color: #FFFFFF;
-	margin: 50px;
+	/* margin: 50px; */
 }
 .gallery2{
 	margin: 50px;
@@ -42,6 +42,11 @@ body{
 
 @media only screen and (max-width: 700px){
 .gallery2{
+	margin: 0px 10px;
 	padding: 0px;
+}
+.gallery2 img{
+	width: 90%;
+	padding: 15px 0px;
 }
 }
