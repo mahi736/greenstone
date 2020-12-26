@@ -1,0 +1,47 @@
+@charset"utf-8";
+/* CSS Document */
+body{
+	background-color:#f6f5f5;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* .active{
+	font-weight: bold;
+	color: #2d2a2a;
+} */
+.text{
+	margin: 10px;
+	padding: 0px;
+	background: #f6f5f5;
+	border-radius: 5px;
+	background: #000000;
+}
+.text h1{
+	font-size: 60px;
+	line-height: 1.4;
+	letter-spacing: 0.5rem;
+	text-align: center; 
+	color: #FFFFFF;
+	margin: 50px;
+}
+.gallery2{
+	margin: 50px;
+	padding: 50px;
+
+}
+.gallery2 img{
+	transition: 1s;
+	padding: 15px;
+	width: 250px;
+}
+.gallery2 img:hover {
+	filter: grayscale(100%);
+	transform: scale(1);
+}
+
+@media only screen and (max-width: 700px){
+.gallery2{
+	padding: 0px;
+}
+}
