@@ -634,7 +634,7 @@ footer p:nth-child(3){
 	
 @media only screen and (max-width: 400px){
 	.profile-container img{
-		width: 65%;
+		width: 75%;
 		height: 195px;
 	}
 	.profile-container{
