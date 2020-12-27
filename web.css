@@ -17,7 +17,7 @@ ul{
 	list-style: none;
 }
 a{
-	text-decoration:none;
+	text-decoration:none !important;
 }
 section{
 	/* widows: 100%;
@@ -26,16 +26,16 @@ section{
 	position: relative;
 }
 .navbar{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
 	height: 60px;
 	box-shadow: 2px 2px 12px rgba(0,0,0.2);
 	padding: 0px 5%;
 	position: sticky;
 	top: 0px;
 	background-color: white;
-	position: sticky;
+	position: sticky !important;
 	top: 0px;
 	z-index: 999;
 	transition: all 0.7s ease-out;
