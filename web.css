@@ -48,7 +48,7 @@ section{
 	margin: 30px;
 	font-family: myriad pro regular;
 	color: black;
-	font-size: 15px;
+	font-size: 25px;
 	font-weight: 700;
 }
 .navbar ul li a:hover{
@@ -60,7 +60,7 @@ section{
 .logo{
 	font-family: RoadTest;
 	color: green;
-	font-size: 22px;
+	font-size: 30px;
 }
 .active{
 	font-weight: bold;
@@ -623,9 +623,6 @@ footer p:nth-child(3){
 	.event-container{
 		padding: 15px;
 	}
-	.event-container img{
-		width: 100%;
-	}
 	.gallery{
 		width: 92%;
 		box-shadow: 1px 1px 1px 4px gray;
@@ -649,6 +646,12 @@ footer p:nth-child(3){
 	}
 	.team{
 		padding: 0px;
+	}
+	.box img{
+		width: 100%;
+	}
+	.event-container img{
+		width: 100%;
 	}
 }
 }
