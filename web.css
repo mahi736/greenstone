@@ -236,7 +236,7 @@ h1{
 
 }
 .box img{
-	width: 280px;
+	width: 238px;
 	height: 150px;
 	border-radius: 5px;
 }
@@ -619,9 +619,6 @@ footer p:nth-child(3){
 	}
 	.box{
 		margin: 20px auto;
-	}
-	.box img{
-		width: 100%;
 	}
 	.event-container{
 		padding: 15px;
